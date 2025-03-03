@@ -4,10 +4,17 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+const result = [];
+function firstLetterName(array, string) {
+    for (let i = 0; i < names.length; i++){
+        if (array[i].startsWith(string))
+            result.push(array[i]);
+        }
+        return result;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(firstLetterName(names, 'A'));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
