@@ -6,14 +6,13 @@ const userName = 'Mario';
 // Dichiara la funzione qui.
 
 function helloName (wordOne){
-   const helloName = wordOne + ' ' + userName;
-   return helloName
-} 
+    const helloName = wordOne + ' ' + userName;
+    return helloName
+ } 
+ 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
 console.log(helloName('ciao'));
-
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
