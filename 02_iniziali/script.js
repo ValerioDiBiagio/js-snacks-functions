@@ -5,12 +5,14 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-const newArray = []
 
-function arrayTwo()  {
-    for (let i = 0; i <= names.length -1; i++) {
-        const letterNumberOne = names[i].substring(0,1);
-        newArray.push(letterNumberOne);
+
+function arrayTwo(elements)  {
+    const newArray = [];
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        const firstLetter = element.charAt(0);
+        newArray.push(firstLetter);
 
     }
         return newArray;
@@ -20,7 +22,7 @@ function arrayTwo()  {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(arrayTwo(newArray));
+console.log(arrayTwo(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
